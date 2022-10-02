@@ -1,7 +1,5 @@
 import React from "react";
 
-export type position = 'top' | 'center'
-export type type = 'alert' | 'confirm' | 'prompt'
 export type funcName = 'onClick' | 'onClose'
 type handler = (value: boolean | string) => void
 
@@ -19,8 +17,8 @@ interface ButtonType {
 
 export interface DialogWindowProps {
     backgroundColor?: string,
-    position?: position,
-    type?: type,
+    position?: string,
+    type?: string,
     animation?: boolean,
     text?: string,
     title?: string,
@@ -42,7 +40,7 @@ export interface PromptProps {
 }
 
 export interface FooterProps extends PromptProps {
-    type?: type,
+    type?: string,
 }
 
 export interface Settings extends DialogWindowProps {
