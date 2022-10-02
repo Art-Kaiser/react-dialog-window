@@ -1,9 +1,8 @@
 import React from "react";
-import {position} from "../DialogWindow/types";
 
 export interface StyleProps {
     blackout?: boolean,
-    position?: position,
+    position?: string,
     bg?: string,
     color?: string,
     animated?: boolean,
