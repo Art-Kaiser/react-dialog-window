@@ -1,7 +1,6 @@
 <h1>React Dialog Window</h1>
-<hr/>
 
-Add to index.html <code>`<div id="modal-root"></div>`</code>. 
+Add to index.html `<div id="modal-root"></div>`. 
 Pass the specified id to <code>elementId</code>.
 
 <code>import { useDialogWindow } from "react-dialog-window";</code>
