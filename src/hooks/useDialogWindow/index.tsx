@@ -14,8 +14,8 @@ const useDialogWindow = ({ elementId, children, ...props }: Settings) => {
     const open = () => {
         // @ts-ignore
         const root = ReactDOM?.createRoot(document.getElementById(elementId))
-        const onSuccess = handleClick(root, 'onClick')
-        const onReject = handleClick(root, 'onClose')
+        const onSuccess = handleClick(root, 'onSuccess')
+        const onReject = handleClick(root, 'onReject')
 
         root.render(
             <DialogWindow

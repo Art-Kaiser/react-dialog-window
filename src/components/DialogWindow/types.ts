@@ -1,6 +1,6 @@
 import React from "react";
 
-export type funcName = 'onClick' | 'onClose'
+export type funcName = 'onSuccess' | 'onReject'
 type handler = (value: boolean | string) => void
 
 interface ButtonType {
@@ -10,8 +10,8 @@ interface ButtonType {
     backgroundColor?: string,
     border?: string,
     hidden?: boolean,
-    onClick?: handler,
-    onClose?: handler,
+    onSuccess?: handler,
+    onReject?: handler,
     color?: string,
 }
 
@@ -19,7 +19,6 @@ export interface DialogWindowProps {
     backgroundColor?: string,
     position?: string,
     type?: string,
-    animation?: boolean,
     text?: string,
     title?: string,
     titleColor?: string,
