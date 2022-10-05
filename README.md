@@ -15,11 +15,11 @@ const settings = {
     color: "gray",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     buttons: {
-        onClick: (e) => {
-            console.log("onClick: ", e)
+        onSuccess: (e) => {
+            console.log("onSuccess: ", e)
         },
-        onClose: () => {
-            console.log("onClose")
+        onReject: () => {
+            console.log("onReject")
         }
     }
 }
